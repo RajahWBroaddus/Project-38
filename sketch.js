@@ -78,7 +78,7 @@ function draw() {
     stroke("black");
     fill("black")
 
-    text(`Highscore: ${localStorage["getItem"]("HighestScore")} Score: ${score}`, trex.x + 480, 50);
+    text(`Highscore: ${localStorage["getItem"]("HighestScore")} Score: ${score}`, trex.x + 180, 50);
     camera.x = trex.x + 250
     if (gameState === PLAY) {
         score = score + Math.round(getFrameRate() / 60);
@@ -130,7 +130,7 @@ function draw() {
     //extended ground
     stroke(rgb(243, 209, 136));
     fill(rgb(243, 209, 136));
-    rect(trex.x - 100, ground.y + 6, 705, 70);
+    rect(trex.x - 200, ground.y + 6, 805, 70);
     drawSprites();
 }
 
