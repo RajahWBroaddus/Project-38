@@ -78,7 +78,7 @@ function draw() {
     stroke("black");
     fill("black")
 
-    text(`Highscore: ${localStorage["getItem"]("HighestScore")} Score: ${score}`, trex.x + 180, 50);
+    text(`Highscore: ${localStorage["getItem"]("HighestScore")} Score: ${score}`, trex.x + 480, 50);
     camera.x = trex.x + 250
     if (gameState === PLAY) {
         score = score + Math.round(getFrameRate() / 60);
